@@ -35,11 +35,13 @@ M.defaults = {
   -- * global (default)
   -- * tab
   -- * win
-  scope_chdir = 'global',
+  scope_chdir = "global",
 
   -- Path where project.nvim will store the project history for use in
   -- telescope
   datapath = vim.fn.stdpath("data"),
+
+  after_changed_cwd_callback = nil,
 }
 
 ---@type ProjectOptions
